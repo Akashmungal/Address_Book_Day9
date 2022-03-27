@@ -10,12 +10,14 @@ class Contacts {
     public String phoneNumber;
     public String email;
     //Standard setters
+
     public void setFirstName (String firstName) {
         this.firstName = firstName;
     }
     public void setLastName (String lastName) {
         this.lastName = lastName;
     }
+
     public void setAddress (String address){
         this.address = address;
     }
@@ -35,6 +37,7 @@ class Contacts {
         this.email = email;
     }
     //Standard getters
+
     public String getFirstName() {
         return this.firstName;
     }
@@ -60,6 +63,7 @@ class Contacts {
         return this.email;
     }
     //parameterized constructor
+
     public Contacts (String firstName, String lastName, String address, String city, String state, String zip, String phoneNumber, String email) {
         setFirstName(firstName);
         setLastName(lastName);
@@ -71,6 +75,7 @@ class Contacts {
         setEmail(email);
     }
     //method for displaying person record
+
     public String toString() {
         return "[ Name : " + this.firstName + " " + this.lastName +
                 "\nAddress : " + this.address +
